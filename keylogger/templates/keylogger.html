@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keylogger Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Keylogger Control</h1>
+        
+        <div class="section">
+            <h2>Keylogger Status</h2>
+            <p id="keylogger-status">Status: Inactive</p>
+            <p id="file-location">Log File: {{ log_file_path }}</p>
+            
+            <div class="button-group">
+                <button id="start-keylogger" class="btn btn-start">Start Keylogger</button>
+                <button id="stop-keylogger" class="btn btn-stop" disabled>Stop Keylogger</button>
+            </div>
+            
+            <a href="/" class="btn btn-back">Back to Home</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='keylogger.js') }}"></script>
+</body>
+</html> 
