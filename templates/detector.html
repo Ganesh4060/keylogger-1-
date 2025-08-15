@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keylogger Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Keylogger Detector</h1>
+        
+        <div class="section">
+            <h2>Scan for Keyloggers</h2>
+            <button id="scan-button" class="btn btn-detector">Start Scan</button>
+            <div id="scan-results" class="results-container">
+                <!-- Results will be displayed here -->
+            </div>
+            <a href="/" class="btn btn-back" id="back-to-home">Back to Home</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='detector.js') }}"></script>
+</body>
+</html> 
